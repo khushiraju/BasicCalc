@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="48dp"
-        android:text="Basic Calculator"
-        android:textSize="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,8 +26,8 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="196dp"
         android:ems="10"
-        android:hint="num1"
-        android:inputType="textPersonName"
+        android:hint="num 1"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,8 +38,8 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="296dp"
         android:ems="10"
-        android:hint="num2"
-        android:inputType="textPersonName"
+        android:hint="num 2"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,9 +47,12 @@
         android:id="@+id/subtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
+        android:layout_marginStart="200dp"
         android:layout_marginTop="420dp"
+        android:onClick="subt"
         android:text="Subtract"
+        android:textSize="20sp"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,9 +60,12 @@
         android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="420dp"
+        android:onClick="add"
         android:text="Add"
+        android:textSize="20sp"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,10 +73,11 @@
         android:id="@+id/ansTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="532dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="504dp"
         android:text="Answer"
-        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
